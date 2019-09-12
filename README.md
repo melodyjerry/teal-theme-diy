@@ -6,7 +6,7 @@
 
 # DEMO
 
-![DEMO](demo.bmp)
+![DEMO](demo.jpg)
 
 # INSTALLATION
 
