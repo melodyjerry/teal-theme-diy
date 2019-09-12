@@ -6,8 +6,6 @@
 
 # DEMO
 
-### Simplified Chinese
-
 ![DEMO](demo.bmp)
 
 # INSTALLATION
