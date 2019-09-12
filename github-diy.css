@@ -1,3 +1,5 @@
+@import "night/codeblock.dark.css";
+
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
@@ -47,7 +49,6 @@ h6 {
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-weight: bold;
     line-height: 1.5;
     cursor: text;
 }
@@ -86,9 +87,12 @@ h6 code {
 h1 {
   font-size: 2.25em;
   color: #009688;
-  padding-left: 11px;
+  text-align: center;
   line-height: 1.4;
-  border-left: 8px solid #009688;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  margin-top: 35px;
+  border-bottom: 1px solid #009688;
 }
 h2 {
   font-size: 1.75em;
@@ -152,7 +156,7 @@ li p.first {
 }
 ul,
 ol {
-    padding-left: 30px;
+    padding-left: 2em;
 }
 ul:first-child,
 ol:first-child {
@@ -163,9 +167,10 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
-    color: #777777;
+    border-left: 2px solid #888;
+    margin-left: 1em;
+    padding-left: 1em;
+    color: #777;
 }
 blockquote blockquote {
     padding-right: 0;
@@ -223,9 +228,10 @@ img{
 code,
 tt {
     font-family: "Fira Code", "Noto Sans SC Regular", sans-serif;
-    border: 1px solid #e7eaed;
     background-color: #f8f8f8;
-    border-radius: 5px;
+    color: #b8bfc6;
+    border-radius: 7px;
+    box-shadow: 0 0 7px #222 inset;
     padding: 0;
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
@@ -262,7 +268,8 @@ code {
 }
 
 .md-fences {
-	background-color: #f8f8f8;
+    background-color: #333;
+    padding: 15px;
 }
 #write pre.md-meta-block {
 	padding: 1rem;
@@ -375,4 +382,85 @@ header, .context-menu, .megamenu-content, footer{
 .ty-preferences .nav-group-item.active {
     color: white;
     background: #999;
+}
+
+/** initialize css counter */
+#write {
+    counter-reset: h1
+}
+
+h1 {
+    counter-reset: h2
+}
+
+h2 {
+    counter-reset: h3
+}
+
+h3 {
+    counter-reset: h4
+}
+
+h4 {
+    counter-reset: h5
+}
+
+h5 {
+    counter-reset: h6
+}
+
+/** put counter result into headings */
+#write h2:before {
+    counter-increment: h2;
+    content: counter(h2) ".  "
+}
+
+#write h3:before,
+h3.md-focus.md-heading:before /** override the default style for focused headings */ {
+    counter-increment: h3;
+    content: counter(h2) "." counter(h3) "   "
+}
+
+#write h4:before,
+h4.md-focus.md-heading:before {
+    counter-increment: h4;
+    content: counter(h2) "." counter(h3) "." counter(h4) "   "
+}
+
+#write h5:before,
+h5.md-focus.md-heading:before {
+    counter-increment: h5;
+    content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "   "
+}
+
+#write h6:before,
+h6.md-focus.md-heading:before {
+    counter-increment: h6;
+    content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) "   "
+}
+
+/** override the default style for focused headings */
+#write>h2.md-focus:before,
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h2.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+    color: inherit;
+    border: none;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
