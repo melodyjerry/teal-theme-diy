@@ -25,7 +25,7 @@
 
 # INSTALLATION
 
-1. Intstall all [Fonts]((tree/master/Fonts)) of the repo on your PC.
+1. Intstall all [Fonts](Fonts) of the repo on your PC.
 2. Copy [github-diy.css](github-diy.css) to your **Typora theme folder**.
 3. Have fun!
 
