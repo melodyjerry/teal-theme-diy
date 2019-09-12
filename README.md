@@ -1,12 +1,15 @@
+# INTRODUCTION
 
+- A [Typora](https://www.typora.io/) theme designed for Chinese papers based on github.css.
 
-## INTRODUCTION
+- The theme has been tested on Win10.
+- **Simplified Chinese** & English are tested.
 
-> This is a DIY theme for Typora based on github.css.
+# DEMO
 
-> The theme has been tested on Win10.
+### Simplified Chinese
 
-## DEMO
+![DEMO0](README.assets/DEMO0.JPG)
 
 ### Headings & Body Texts & Blockquotes
 
@@ -20,7 +23,7 @@
 
 ![DEMO3](README.assets/DEMO3.JPG)
 
-## INSTALLATION
+# INSTALLATION
 
 1. Intstall all [Fonts]((Fonts)) of the repo on your PC.
 2. Copy [github-diy.css](github-diy.css) to your **Typora theme folder**.
