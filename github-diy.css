@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: "Noto Sans SC Regular", sans-serif;
-    color: rgb(51, 51, 51);
+    color: #222222;
     line-height: 1.5;
 }
 
@@ -34,7 +34,7 @@ body {
   color: #009688;
 }
 #write ol > li > *, #write ul > li > * {
-  color: #24292e;
+  color: #222222;
 }
 
 a {
@@ -228,18 +228,22 @@ img{
 code,
 tt {
     font-family: "Fira Code", "Noto Sans SC Regular", sans-serif;
-    background-color: #f8f8f8;
+    background-color: #333;
     color: #b8bfc6;
     border-radius: 7px;
     box-shadow: 0 0 7px #222 inset;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
+    padding: 15px;
     font-size: 0.9em;
 }
 
 code {
-    background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
+    background-color: #f8f8f8;
+    border: 1px solid #b1d3d0;
+    padding: 0 3px;
+    margin: 0 3px;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #222222;
 }
 
 .md-fences {
@@ -267,10 +271,6 @@ code {
     }
 }
 
-.md-fences {
-    background-color: #333;
-    padding: 15px;
-}
 #write pre.md-meta-block {
 	padding: 1rem;
     font-size: 85%;
