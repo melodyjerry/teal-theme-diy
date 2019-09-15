@@ -99,13 +99,13 @@ h2 {
   color: #009688;
   padding-left: 10px;
   line-height: 1.4;
-  border-left: 5px solid #009688;
+  border-left: 3px solid #009688;
 }
 h3 {
   font-size: 1.3em;
   line-height: 1.43;
-  padding-left: 9px;
-  border-left: 4px solid #009688;
+  padding-left: 10px;
+  border-left: 2px solid #009688;
 }
 #write > h3.md-focus:before,
 #write > h4.md-focus:before {
@@ -115,18 +115,18 @@ h3 {
 }
 h4 {
   font-size: 1.2em;
-  padding-left: 8px;
-  border-left: 3px dashed #009688;
+  padding-left: 10px;
+  border-left: 2px dashed #009688;
 }
 h5 {
   font-size: 1.1em;
-  padding-left: 7px;
-  border-left: 2px dashed #009688;
+  padding-left: 10px;
+  border-left: 1px dashed #009688;
 }
 h6 {
   font-size: 1em;
-  padding-left: 6px;
-  border-left: 1px dashed #009688;
+  padding-left: 10px;
+  border-left: 1px dotted #009688;
 }
 p,
 blockquote,
