@@ -63,8 +63,6 @@ class Solution(object):
 
 ![ChMkJlYl3yWIUgfxAAmpQTDdOVMAAD4zQLhwfEACalZ199](demo.assets/ChMkJlYl3yWIUgfxAAmpQTDdOVMAAD4zQLhwfEACalZ199.jpg)
 
-
-
 # 中文标题
 
 ## 标题2
@@ -95,8 +93,8 @@ class Solution(object):
 
 ### 无序列表
 
- - 第一项
-   - 子项目一
-     - 子项目二
- - 第二项
- - 第三项
+- 第一项
+  - 子项目一
+  - 子项目二
+- 第二项
+- 第三项
